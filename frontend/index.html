@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aprova1000</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar">
+
+            <img class="logoImage" src="img/Gemini_Generated_Image_x8e3rgx8e3rgx8e3-removebg-preview (1).png"
+                alt="Aprova1000">
+            <div id="newChat">
+                <button id="chatContainer">
+
+                    <img id="newChatImg" src="img/editar.png" alt="Novo chat">
+                    <span>Novo chat</span>
+                </button>
+            </div>
+
+            <div id="chats">
+                <p>Conversas</p>
+                <div id="listaChats"></div>
+            </div>
+
+        </aside>
+
+
+        <main class="chat-container">
+
+            <div id="chatArea"></div>
+
+            <div id="welcome" class="welcome">
+                <p>Qual sua dúvida hoje?</p>
+            </div>
+
+            <div id="areaText">
+
+                <div class="input-wrapper">
+
+                    <label for="imageInput" class="uploadBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M12 3v12" />
+                            <path d="m17 8-5-5-5 5" />
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        </svg>
+                    </label>
+
+                    <input type="file" id="imageInput" accept="image/*" hidden>
+
+                    <textarea id="chatInput" placeholder="Pergunte alguma coisa..."></textarea>
+
+                </div>
+
+                <button id="sendButton">Enviar</button>
+
+            </div>
+
+        </main>
+
+    </div>
+    <script src="js/chat.js"></script>
+</body>
+
+</html>
